@@ -1,0 +1,24 @@
+.bx-wrapper	{ border:none;
+			  -moz-box-shadow:none;
+			  -webkit-box-shadow:none;
+			  box-shadow:none;
+			  background-color:transparent; }
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager
+			{ bottom:5%; }
+.bx-wrapper .bx-pager.bx-default-pager a
+			{ background-color:#fff; }
+.bx-wrapper .bx-pager.bx-default-pager a:focus,
+.bx-wrapper .bx-pager.bx-default-pager a:hover
+			{ background-color:#f00; }
+.bx-wrapper .bx-pager.bx-default-pager a.active
+			{ background-color:#00f; }
+
+.bx-wrapper .bx-caption
+			{ background-color:transparent;
+			  bottom:auto; top:20%;
+			  text-align:right; }
+.bx-wrapper .bx-caption span
+			{ font-family:'Times','Times New Roman',serif;
+			  font-size:5vw; padding-right:5%; padding-left:5%;
+			  background-color:rgba(0,0,0,.5);
+			  display:inline-block; }

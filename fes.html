@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<!--[if lt IE 9]>
+		<script type='text/javascript' src='js/html5shiv-printshiv.min.js'></script>
+		<script type='text/javascript' src='js/css3-mediaqueries.js'></script>
+	<![endif]-->
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=0.5,user-scalable=yes,initial-scale=1.0">
+	<title>練習</title>
+
+	<link rel='stylesheet' type='text/css' href='css/normalize.css'>
+	<link rel='stylesheet' type='text/css' href='css/initialize.css'>
+	<link rel='stylesheet' type='text/css' href='css/com.css'>
+	<link rel='stylesheet' type='text/css' href='css/fes.css'>
+	<link rel="stylesheet" href="jq/bxslider/jquery.bxslider.min.css" />
+	<link rel="stylesheet" href="jq/drawer/drawer.min.css" />
+	<link rel="stylesheet" href="css/bxslider_fix.css" />
+	<link rel='stylesheet' href='css/drawer_fix.css'>
+	<script src="jq/jquery-2.2.4.min.js"></script>
+	<script src="jq/jquery.easing.1.3.js"></script>
+	<script src="jq/bxslider/jquery.bxslider.min.js"></script>
+	<script src="js/bxslider.js"></script>
+	<script src="jq/jquery.inview.min.js"></script>
+	<script src="js/inview.js"></script>
+	<script src="jq/iscroll.js"></script>
+	<script src="jq/drawer/drawer.min.js"></script>
+	<script src='js/drawer.js'></script>
+    <script src='jq/jquery.scrollUp.min.js'></script>
+
+<!-- //////////////////////////topbutton//////////////////////// -->
+<script>
+        $(document).ready(function (){
+            var topBtn = $('#page-top');    
+            topBtn.hide();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 400) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            topBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+        </script>
+        
+        <!-- ////////////////////hamburgermenu///////////////////// -->
+        
+        <script>
+        $(document).ready(function (){
+            var banner = $('#banner');    
+            banner.hide();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 350) {
+                    banner.fadeIn();
+                } else {
+                    if (window.matchMedia('screen and (min-width:768px)').matches) {
+                        banner.fadeOut();
+                    } else {
+                        banner.fadeIn();
+                    }
+                }
+            });
+        });
+        </script>
+
+</head>
+<body>
+
+<body class="drawer drawer--left">
+  <header id="banner"role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+          <h1 class="drawer-brand" href="#">メニュー</h1>
+      <ul class="drawer-menu menu">
+        <li><a class="drawer-menu-item" href="index.html">トップ</a></li>
+        <li><a class="drawer-menu-item" href="event.html">季節特集</a></li>
+		<li><a class="drawer-menu-item" href='#'>京都三大祭り</a></li>
+		<li><a class="drawer-menu-item" href='food.html'>京都うまいもん</a></li>
+		<li><a class="drawer-menu-item" href='#'>イベント</a></li>
+		<li><a class="drawer-menu-item" href='questionnaire.html'>アンケート</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div id="title">
+	<p>おこしやす<span class="kyoto">京都</span></p>
+</div>
+<div id="title2">
+		<p>三大祭</p>
+	</div>
+
+ 
+
+	<header id="header">
+		<nav id="menu1" class="menu">
+			<h1>メニュー</h1>
+			<ul>
+				<li><a href='index.html'>トップ</a></li>
+				<li><a href='event.html'>季節特集</a></li>
+				<li><a href='#'>京都三大祭り</a></li>
+				<li><a href='food.html'>京都うまいもん</a></li>
+				<li><a href='#'>イベント</a></li>
+				<li><a href='questionnaire.html'>アンケート</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="top" class="bxslider">
+		<div><img src="img/fes1.jpg" alt="" /></div>
+		<div><img src="img/fes2.jpg" alt="" /></div>
+        <div><img src="img/fes3.jpg" alt="" /></div>
+        <div><img src="img/fes4.jpg" alt="" /></div>
+	</div>
+
+
+	<p id="page-top">
+			<a href="#wrap">TOP</a>
+		</p>
+
+
+<div id='fes'>
+	<h1>京都<strong>三</strong>大祭り</h1>
+	<div id="text">
+		<span>
+			京都は日本が誇る古都。平安の世から続く王朝文化が色濃く残り、
+			数多くの神社仏閣とともに、数々の祭が現在まで伝えられています。
+			その中で、1000年以上の歴史ある、
+			春の「葵祭」と夏の「祇園祭」、近代のものですが、
+			京都の歴史を集約させた大規模な祭である、
+			秋の「時代祭」を、「京都三大祭」としてご紹介します。
+		</span>
+	</div>
+	
+	<div id='gion' class="maturi">
+		<h1>祇園祭り</h1>
+		<div id='gion2' class='fes-text'>
+			<div>
+				<span>京都を代表する「祇園祭」は、
+						1000年以上の歴史を誇る伝統の祭です。
+						祭は7月1日から1ヶ月に及び、
+						さまざまな行事を行いながら、
+						京都は本格的な夏を迎えます。、
+						祇園囃子の音が響く夏の夜の「宵山」、
+						祭のハイライトである「山鉾巡行」、
+						そして「神輿渡御」があります。</span>
+			</div>
+			<div>
+				<img class="fadebox2" src='img/gion.jpg' alt=''>
+			</div>
+		</div>
+	</div>
+	<div id='aaoi' class="maturi">
+		<h1>葵祭り</h1>
+		<div id='aoi2' class='fes-text'>
+			<div>
+			<span>「葵祭」は、賀茂祭りとも言われ、
+					上賀茂神社と下鴨神社の例祭です。
+					平安時代から、朝廷の最も重要な祭祀として、
+					国家的な行事となっております。
+					最大の見どころは、平安の王朝文化を残す行列。
+					葵祭の呼称は、内裏の御簾や御所車、
+					勅使などの行列の全てが葵の葉で飾られているからです。
+				</span>
+			</div>
+			<div><img class="fadebox3" src='img/aoi.jpg' alt=''></div>
+		</div>
+	</div>
+	
+	<div id='zidai' class="maturi">
+		<h1>時代祭り</h1>
+		<div id='zidai2'class="fes-text">
+			<div>
+				<span>毎年秋に開催される「時代祭」は、平
+					安神宮の祭です。見どころは、各時代に扮した大行列。
+					明治維新・江戸・安土桃山・室町・吉野・鎌倉・藤原・延暦の
+					8つの時代の総勢2000名を超える行列となっています。
+					京都の伝統工芸の粋と時代考証によって復元されたものであります
+				</span>
+			</div>
+			<div><img class="fadebox2" src='img/zidai.jpg' alt=''></div>
+		</div>
+	</div>
+</div>
+
+
+	<div id="link" class="link-master">
+		<div class="flex">
+			<div class="link-inner">
+				<a class="mask after" href="#">
+					<img src="img/link1.jpg" alt="" />
+				</a>
+			</div>
+			<div class="link-inner">
+				<a class="mask after" href="#">
+					<img class="e" src="img/link2.jpg" alt="" />
+				</a>
+			</div>
+		</div>
+		<div class="link-inner">
+			<a class="mask" href="#">
+				<img src="img/link3.jpg" alt="" />
+			</a>
+		</div>
+		<div class="link-inner">
+			<a class="mask" href="#">
+				<img src="img/link4.jpg" alt="" />
+			</a>
+		</div>	
+		<div class="flex">
+			<div class="link-inner">
+				<a class="mask after" href="#">
+					<img src="img/link5.jpg" alt="" />
+				</a>
+			</div>
+			<div class="link-inner">
+				<a class="mask after" href="#">
+					<img src="img/link6.jpg" alt="" />
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<div id='flex'>
+				<div id="hidden"><a href='#'>TOPへ</a></div>
+				<div id="sns1" class="sns-inner">
+					<a href=''>
+						<img src='img/twitter.svg' alt=''></a>
+					<a href=''>
+						<img src='img/facebook.svg' alt=''></a>
+					<a href=''>
+						<img src='img/line.svg' alt=''></a>
+				</div>
+			<div id='footer1' class="footer-master">
+				<div>
+					<a href=''>TOP</a>
+				</div>
+			</div>
+			<div id='footer2'class="footer-master">
+				<div>
+					<a href=''>季節イベント</a>
+				</div>
+				<div>
+					<a href=''>春イベント</a>
+				</div>
+				<div>
+					<a href=''>地下鉄に乗る</a>
+				</div>
+				<div>
+					<a href=''>フォトコン</a>
+				</div>
+			</div>
+			<div id='footer3'class="footer-master">
+				<div>
+					<a href=''>食事</a>
+				</div>
+				<div>
+					<a href=''>お土産</a>
+				</div>
+				<div>
+					<a href=''>路地裏グルメ</a>
+				</div>
+			</div>
+			<div id='footer4'class="footer-master">
+				<div>
+					<a href=''>祇園祭</a>
+				</div>
+				<div>
+					<a href=''>葵祭り</a>
+				</div>
+				<div>
+					<a href=''>時代祭</a>
+				</div>
+			</div>
+			<div id='footer5'class="footer-master">
+				<div>
+					<a href=''>アンケート</a>
+				</div>
+				<div>
+					<a href=''>概要</a>
+				</div>
+				<div>
+					<a href=''>案内</a>
+				</div>
+			</div>
+		</div>
+		<div id="copy">
+		<span>Copyright &copy; kyoto all rights reserved.</span></div>
+	</footer>

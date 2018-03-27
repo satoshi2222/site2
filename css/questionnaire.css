@@ -1,0 +1,36 @@
+body                { background-color:#eceaea; font-size:2vw;}
+
+.menu ul>:nth-child(6)      { color:#7a3fe7 }
+.drawer-menu>:nth-child(6)  { color:#7a3fe7; }
+
+#wrap               { width:70%;margin:2vw auto 2vw auto;
+                      background-color:#fff;border-radius:1vw;
+                      padding:2vw; }
+.tac                  { text-align:center;}
+.tac>h1             { margin-top:3vw;}
+#an                 { width:70%;margin:0 auto; }
+
+textarea            { resize: none;width:100%;}
+#an                { margin-bottom:3vw; }
+#sex                { margin-top:2vw; }
+#age                { margin-top:2vw; }
+
+.q                  { margin-bottom:3vw; }
+#but                { padding:.5vw; }
+
+/*************************************************************************
+ *Media
+ ************************************************************************/
+
+@media screen and (max-width:480px){
+body                { font-size:4.5vw; }
+#wrap               { width:90%;margin:2vw auto 2vw auto;
+                       padding:14vw 4vw 8vw 4vw;}
+#wrap div          {margin-top:6vw; }
+#wrap div *         { margin-top:2vw;}
+
+#an                 { width:96%;margin:4vw auto; }
+#h                  { display:none; }
+#toshi              {padding-top:5vw;}
+
+}

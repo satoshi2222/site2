@@ -1,0 +1,45 @@
+/*************************************************************************
+ *.initialize styles                              copyright:norihikoikeda
+    resume :
+      1.00.02  2015-05-24    # changed dynamic pseudo-classes.
+                               added prefix element name of anchor.
+                             - remove a value of 0 on margin and padding
+                               from img elements
+      1.00.01  2015-01-04    + add any attributes.
+      1.00.00  2012-10-05    + create document.
+ ************************************************************************/
+/*************************************************************************
+ *..elememt styles
+ ************************************************************************/
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite,
+code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4,
+h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre,
+q, s, samp, small, span, strike, strong, sub, sup, table, tbody, textarea,
+td, tfoot, th, thead, tr, tt, ul, var, input,
+article, aside, dialog, figure, footer, header, hgroup, nav, section
+				{ -webkit-box-sizing:border-box; -moz-box-sizing:border-box;
+				  -ms-box-sizing:border-box; box-sizing:border-box; }
+input, textarea, select, button
+				{ font-family:inherit; font-size:100%; }
+:focus			{ outline:0; }
+a:active, a:hover, a:link, a:visited
+				{ text-decoration:none; color:inherit; }
+hr				{ margin:0; padding:0; border:none; background-color:#ccc; height:1px; }
+table			{ border-collapse:collapse; border-spacing:0; }
+th, td			{ empty-cells:show; border:none; font-weight:normal; }
+th				{ text-align:center; vertical-align:middle; }
+td				{ text-align:left; vertical-align:top; }
+ul				{ list-style-type:none; margin:0; padding:0; }
+iframe, img		{ border:none; text-decoration:none; }
+html			{ *font-size:small; *font:x-small; }
+body			{ margin:0; }
+/*************************************************************************
+ *..class styles
+ ************************************************************************/
+.clearfix		{ *zoom:1; }
+.clearfix:after { content:''; display:block; clear:both; height:0; overflow:hidden; }
+.cleartype		{ -webkit-transform-origin:0 0; -webkit-transform:scale(1,1.01);
+				  -moz-transform-origin:0 0; -moz-transform:scale(1,1.01);
+				  -ms-transform-origin:0 0; -ms-transform:scale(1,1.02);/* IE9 1.02 */
+				  -o-transform-origin:0 0; -o-transform:scale(1,1.01);
+				  transform-origin:0 0; transform:scale(1,1.01); }

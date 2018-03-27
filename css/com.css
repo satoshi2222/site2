@@ -1,0 +1,222 @@
+
+
+/*************************************************************************
+ *..Font styles
+ ************************************************************************/
+
+ @font-face			{ font-family:'Serlio';
+    src:url('../fnt/SerlioLTStd.eot') format('embedded-opentype"');
+    src:local('SerlioLTStd Regular'),
+        url('../fnt/SerlioLTStd.eot?iefix') format('embedded-opentype"'),
+        url('../fnt/SerlioLTStd.woff') format('woff'),
+        url('../fnt/SerlioLTStd.otf') format('opentype'),
+        url('../fnt/SerlioLTStd.svg#SerlioLTStd') format('svg'); }
+@font-face			{ font-family:'AozoraMinchoMedium';
+    src:url('../fnt/AozoraMinchoMedium.eot') format('embedded-opentype"');
+    src:local('Aozora Mincho Medium'),
+        url('../fnt/AozoraMinchoMedium.eot?iefix') format('embedded-opentype"'),
+        url('../fnt/AozoraMinchoMedium.woff') format('woff'),
+        url('../fnt/AozoraMinchoMedium.ttf') format('turetype'),
+        url('../fnt/AozoraMinchoMedium.svg#AozoraMinchoMedium') format('svg'); }
+
+
+body                  { font-family:"Yu Gothic Medium", "游ゴシック",YuGothic, 
+                        "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+#main{
+    display:none;
+    opacity:0;
+    }
+
+header                  { position:relative;z-index:899;}
+#menu1                   { position:absolute;text-align:center;
+                         background-color:rgba(255,255,255,0.8);
+                         padding:8% 3% 3% 3%;font-weight:600;}
+#menu1>h1                { font-size:2vw; }
+#menu1 li                { font-size:1.3vw;margin-top:25%;position:relative; }
+#menu1 li:first-child    { margin-top:45%; }
+
+/*************************************************************************
+ *Drawer
+ ************************************************************************/
+.drawer-nav				{ text-align:center;background-color:rgba(255,255,255,0.8); }
+.menu					{ text-align:center; }
+.menu li				{ position:relative;margin:20px; }
+.menu li:first-child    { margin-top:20px; }
+
+.drawer-brand			{ margin-top:50px; }
+.drawer-menu li a:hover	{ text-decoration:none; }
+
+
+#title                  { position:absolute;right:0;text-outline:0;
+                        margin-top:31%;margin-right:5%;z-index:400; }
+#title>p             { font-size:6vw;font-weight:900;color:#fff;
+                        font-family:"AozoraMinchoMedium";
+                        text-shadow: 0.1vw 0.1vw 0.1vw #000;
+                        animation: border 2s ease 0s 1 normal;
+                        -webkit-animation: border 2s ease 0s 1 normal; }
+#title>p:before,#title>p:after
+                         { content:""; position:absolute;font-size:2vw;text-shadow:none;
+                            font-family:"Yu Gothic Medium", "游ゴシック", YuGothic, 
+                          "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
+
+#title>p:before       { content:"KYOTO TRAVEL GUIDE";bottom:70%;left:0; } 
+#title>p:after        { content:"Kyoto Prefecture";top:72%;left:0;font-size:1.6vw;
+                        }
+
+#title>p              { animation: fadeIn 4s ease 0s 1 normal;
+                        -webkit-animation: fadeIn 4s ease 0s 1 normal; }
+
+
+.link-inner             { position:relative; width:100%;}
+.link-inner,.flex       { display:flex;line-height:0;}
+.link-inner>a           { flex-grow:1;}
+.link-inner img         { width:100%;}
+
+
+footer                  { font-size:1.3vw;letter-spacing:0.3vw;background-color:#dfddec;
+						padding:5% 0;}
+#flex					{ display: -webkit-flex;
+                          display:flex;justify-content:space-around;
+						 padding-bottom:3%; }
+.sns-inner img			{ width:15%;}
+.footer-master			{ border-left:1px solid #000; }
+.footer-master a:hover   { color:#fff;}
+.footer-master>div		{ padding-left:7%;padding-top:4%;width:200px;} }
+.footer-master>div:first-child
+                        { padding-top:0; }
+
+
+#copy					{ text-align:center; }
+
+#hidden					{ text-align:center; }
+
+/*************************************************************************
+ *Media
+ ************************************************************************/
+
+@media screen and (min-width:769px) {
+body                {  animation: fadeIn 2s ease 0s 1 normal;
+                         -webkit-animation: fadeIn 2s ease 0s 1 normal; }
+#hidden					{ display:none; }
+}
+@media screen and (max-width:768px) and (min-width:481px){
+#menu1               			{ display:none; }
+.sns-inner,.footer-master		{ display:none; }
+}
+
+@media screen and (max-width:480px){
+#menu1                { display:none; }
+#title>p                { font-size:10vw;} 
+#title>p:before,#title>p:after
+                       { font-size:3vw;}
+#title>p:after          { display:none; }
+.sns-inner,.footer-master	{ display:none; }
+}
+
+
+/*************************************************************************
+ *PageTop
+ ************************************************************************/
+
+#page-top			{z-index:999;position: fixed;
+				    bottom: 20px;right: 20px;
+                    font-size: 77%;border-radius:5px;
+                    text-align:center;}
+#page-top a 		{ font-size:1vw;border:1px solid #000;
+                    background-color:#000;
+                    color: #fff;
+                    padding:1vw;border-radius:5px;
+                    top:50%;
+                    padding-top:33%;
+				    display: block;}
+#page-top a:hover { text-decoration: none;
+                    background:transparent;
+                    color:#000;}
+
+@media screen and (max-width:768px) and (min-width:481px){
+
+#page-top a 		{ font-size:2vw;padding:2vw}
+}
+
+@media screen and (max-width:480px){
+
+#page-top a 		{ font-size:3.5vw;padding:4vw}
+
+}
+
+
+
+
+/*************************************************************************
+ *Hover-Effect
+ ************************************************************************/
+
+.menu li a:before,.menu li a:after
+                        {content:""; width:0; border-bottom:2px solid #000;
+                        bottom:-30%; position:absolute;z-index:99;
+                        transition: all 0.2s ease;}
+
+.menu li a:before       { left:50%; }
+.menu li a:after        { right:50%; }
+.menu li a:hover:before { width:50%; }
+.menu li a:hover:after  { width:50%; }
+
+/*************************************************************************
+ *Mask-scale
+ ************************************************************************/
+
+
+.mask                   { line-height:0;overflow:hidden;
+                        background:#000; }
+
+.mask img               {width:100%;
+                        -moz-transition: -moz-transform 0.5s linear;
+                        -webkit-transition: -webkit-transform 0.5s linear;
+                        -o-transition: -o-transform 0.5s linear;
+                        -ms-transition: -ms-transform 0.5s linear;
+                        transition: transform 0.5s linear;
+                        -webkit-transform: scale(1.0);
+                        -moz-transform: scale(1.0);
+                        -o-transform: scale(1.0);
+                        -ms-transform: scale(1.0);
+                        transform: scale(1.0);
+                        opacity: 1.0;
+                        transition: 1.0s;}
+
+.mask img:hover         {-webkit-transform: scale(1.03);
+                        -moz-transform: scale(1.03);
+                        -o-transform: scale(1.03);
+                        -ms-transform: scale(1.03);
+                        transform: scale(1.03);
+                        opacity: 0.7;}
+
+/*************************************************************************
+ FadeIn
+ ************************************************************************/
+
+@keyframes fadeIn        { 0% {opacity: 0} 100% {opacity: 1}}
+@-webkit-keyframes fadeIn { 0% {opacity: 0}100% {opacity: 1}}                
+
+
+@keyframes a {
+    0% { width: 0; border-bottom:2px solid rgb(192, 148, 206); }
+    100% { width: 100%;border-bottom:2px solid rgb(192, 148, 206); }
+    }
+
+
+    @keyframes b {
+        0% { transform:translateY(0) }
+        50% { transform:translateY(-10px) }
+        100% { transform:translateY(0) }
+    }
+
+    @keyframes horizontal {
+        0% { transform:translateX( -8px); }
+      100% { transform:translateX(  0px); }
+    }
+    @keyframes vertical {
+        0% { transform:translateY(-9px); }
+      100% { transform:translateY(  0px); }
+    }
